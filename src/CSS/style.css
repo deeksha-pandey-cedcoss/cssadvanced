@@ -1,0 +1,135 @@
+/* body */
+.body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* header */
+.headerclass {
+    padding: 10px 20px;
+    display: flex;
+}
+
+.headerclass__h2 {
+    margin-top: 3%;
+    padding: 3px 2px;
+    width: 90%;
+}
+
+.headerclass__list {
+    display: flex;
+    float: right;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.headerclass__list li {
+    list-style-type: none;
+    margin-right: 10px;
+    padding: 3px 4px;
+}
+
+/* main section */
+.mainsection {
+    background-color: #eee;
+    padding: 10px 20px 40px 20px;
+    margin: 10px 20px 20px 20px;
+}
+
+.mainsection__p {
+    text-align: left;
+    width: 20%;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    margin: 2% 2% 2% 2%;
+}
+
+.article__box1 {
+    background-color: #eee;
+    height: 150px;
+    width: 200px;
+    padding: 20px;
+    margin: 10px 20px 20px 30px;
+}
+
+.sub {
+    display: flex;
+    background-color: #eee;
+    text-align: center;
+    padding: 5px 5px;
+    position: center;
+    padding-left: 30%;
+}
+
+.sub h2 {
+    font-size: 1.5rem;
+}
+
+.sub__input {
+    width: 35%;
+    padding: 10px;
+    margin: 20px 10px;
+}
+
+.sub button {
+    width: 25%;
+    padding: 10px;
+    margin: 20px 0.5px;
+    background-color: #288ace;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* footer */
+
+.footerclass {
+    margin: 20px 40px;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.footerclass_h {
+    float: right;
+}
+
+/* media queries */
+
+@media screen and (max-device-width: 670px) {
+    .sub {
+        display: block;
+
+        text-align: center;
+        padding-left: 10%;
+        margin: 10px 40px 20px 0px;
+    }
+
+    .headerclass__list li {
+        display: block;
+        padding: 0px;
+    }
+
+    .headerclass__list {
+        margin-left: 20%;
+
+    }
+
+    .headerclass {
+        padding-right: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-device-width: 470px) {
+    .sub button {
+        display: block;
+        margin-left: 40%;
+    }
+}
